@@ -1,6 +1,6 @@
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
-const countElement = document.querySelector(".cart-count");
+import { getLocalStorage } from "./utils.mjs"; // ✅ ADD THIS
 
 function updateCartCount() {
     const cartItems = getLocalStorage("so-cart") || [];
@@ -18,10 +18,7 @@ function updateCartCount() {
     }
 }
 
-
-
 const dataSource = new ProductData("tents");
-
 const element = document.querySelector(".product-list");
 
 const productList = new ProductList("Tents", dataSource, element);

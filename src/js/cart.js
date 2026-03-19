@@ -2,42 +2,44 @@ import { getLocalStorage } from "./utils.mjs";
 
 function renderCartContents() {
   const cartItems = getLocalStorage("so-cart") || [];
+
   const productList = document.querySelector(".product-list");
   const cartFooter = document.querySelector(".cart-footer");
   const cartTotal = document.querySelector(".cart-total");
   const countElement = document.querySelector(".cart-count");
 
-  // ✅ If cart is empty
+  // ✅ EMPTY CART FIX
   if (cartItems.length === 0) {
     productList.innerHTML = "<li>Your cart is empty</li>";
+
+    // hide footer
+    cartFooter.classList.add("hide");
+
+    // hide cart count
+    if (countElement) countElement.classList.add("hide");
+
     return;
   }
 
-  // cart count
-  if (!countElement) return;
-
-  const count = cartItems.length;
-
-  if (count > 0) {
-    countElement.classList.remove("hide");
-    countElement.textContent = count;
-  } else {
-    countElement.classList.add("hide");
-  }
-
-  // ✅ Render cart items
+  // ✅ Render items
   const htmlItems = cartItems.map((item) => cartItemTemplate(item));
   productList.innerHTML = htmlItems.join("");
 
-  // ✅ STEP 4: Calculate total
+  // ✅ Calculate total
   const total = cartItems.reduce(
     (sum, item) => sum + item.FinalPrice,
     0
   );
 
-  // ✅ STEP 5: Show footer + insert total
+  // ✅ Show total
   cartFooter.classList.remove("hide");
   cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+
+  // ✅ Update cart count
+  if (countElement) {
+    countElement.classList.remove("hide");
+    countElement.textContent = cartItems.length;
+  }
 }
 
 function cartItemTemplate(item) {
@@ -55,4 +57,3 @@ function cartItemTemplate(item) {
 }
 
 renderCartContents();
-updateCartCount();

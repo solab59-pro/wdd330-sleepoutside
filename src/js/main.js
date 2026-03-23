@@ -1,27 +1,31 @@
-import ProductData from "./ProductData.mjs";
-import ProductList from "./ProductList.mjs";
-import { getLocalStorage } from "./utils.mjs"; // ✅ ADD THIS
+import { loadHeaderFooter } from "./utils.mjs";
 
-function updateCartCount() {
-    const cartItems = getLocalStorage("so-cart") || [];
-    const countElement = document.querySelector(".cart-count");
+loadHeaderFooter();
 
-    if (!countElement) return;
+// import ProductData from "./ProductData.mjs";
+// import ProductList from "./ProductList.mjs";
+// import { getLocalStorage } from "./utils.mjs"; // ✅ ADD THIS
 
-    const count = cartItems.length;
+// function updateCartCount() {
+//     const cartItems = getLocalStorage("so-cart") || [];
+//     const countElement = document.querySelector(".cart-count");
 
-    if (count > 0) {
-        countElement.classList.remove("hide");
-        countElement.textContent = count;
-    } else {
-        countElement.classList.add("hide");
-    }
-}
+//     if (!countElement) return;
 
-const dataSource = new ProductData("tents");
-const element = document.querySelector(".product-list");
+//     const count = cartItems.length;
 
-const productList = new ProductList("Tents", dataSource, element);
+//     if (count > 0) {
+//         countElement.classList.remove("hide");
+//         countElement.textContent = count;
+//     } else {
+//         countElement.classList.add("hide");
+//     }
+// }
 
-productList.init();
-updateCartCount();
+// const dataSource = new ProductData("tents");
+// const element = document.querySelector(".product-list");
+
+// const productList = new ProductList("Tents", dataSource, element);
+
+// productList.init();
+// updateCartCount();

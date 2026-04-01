@@ -132,4 +132,14 @@ function calculateSummary(subtotal) {
   totalEl.textContent = total.toFixed(2);
 }
 
+// ✅ EXPORTS FOR OTHER FILES (CheckoutProcess)
+
 renderCart();
+
+export function getCart() {
+  return JSON.parse(localStorage.getItem('cart')) || [];
+}
+
+export function clearCart() {
+  localStorage.removeItem('cart');
+}

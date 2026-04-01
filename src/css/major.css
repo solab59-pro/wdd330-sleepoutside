@@ -117,6 +117,22 @@ button {
 /* End utility classes */
 
 /* Cart icon styles */
+
+.hide {
+  display: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
 .cart {
   padding-top: 1em;
   position: relative;
@@ -260,66 +276,4 @@ button {
 footer {
   font-size: var(--small-font);
   padding: 1em;
-}
-
-/* checkout.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
-h1, h2, h3 {
-  color: #333;
-}
-
-form {
-  max-width: 600px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  box-sizing: border-box;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #2a9d8f;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #21867a;
-}
-
-.order-summary {
-  border: 1px solid #ccc;
-  padding: 15px;
-  max-width: 600px;
-  border-radius: 8px;
-  background-color: #fefefe;
-}
-
-.order-summary h3 {
-  margin-top: 0;
-}
-
-#checkoutMessage {
-  margin-top: 15px;
-  font-weight: bold;
 }

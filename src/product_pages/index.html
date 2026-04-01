@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Outside | Home</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header divider">
+    <div class="logo">
+      <img src="/images/logos/marmot-160x100.jpg" alt="Tent logo" />
+      <a href="/">Sleep<span class="highlight">Outside</span></a>
+    </div>
+    <div class="cart">
+      <a href="/cart/index.html" aria-label="View cart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">...</svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero divider">
+      <img
+        src="/images/banner-sm.jpg"
+        srcset="/images/banner-sm.jpg 500w, /images/banner.jpg 1000w"
+        alt="Mountain lake campsite"
+        class="hero-image"
+      />
+      <div class="hero-content">
+        <div class="logo logo--square">
+          <img src="/images/logos/marmot-160x100.jpg" alt="Tent logo" />
+          <div>Sleep<span class="highlight">Outside</span></div>
+        </div>
+        <p class="mission">
+          Our mission is to provide you with everything you need to sleep
+          outside comfortably at an affordable price.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES -->
+    <section class="categories divider">
+      <h2>Shop by Category</h2>
+      <div class="categories-grid">
+        <a href="/product_listing/?category=tents" class="category-card">
+          <img src="/images/category-tents.svg" alt="Tents category" />
+          <span>Tents</span>
+        </a>
+        <a href="/product_listing/?category=sleeping-bags" class="category-card">
+          <img src="/images/category-sleepingbags.svg" alt="Sleeping Bags category" />
+          <span>Sleeping Bags</span>
+        </a>
+        <a href="/product_listing/?category=backpacks" class="category-card">
+          <img src="/images/category-backpacks.svg" alt="Backpacks category" />
+          <span>Backpacks</span>
+        </a>
+        <a href="/product_listing/?category=hammocks" class="category-card">
+          <img src="/images/category-hammocks.svg" alt="Hammocks category" />
+          <span>Hammocks</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- TOP PRODUCTS -->
+    <section class="products divider">
+      <h2 id="product-title" class="page-title">Top Products</h2>
+      <ul class="product-list"></ul>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer divider">
+    &copy; 2025 ⛺ SleepOutside ⛺ WDD 330 ⛺ BYU-Idaho / BYU-Pathway Worldwide Online
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

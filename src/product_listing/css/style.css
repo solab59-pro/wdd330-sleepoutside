@@ -254,3 +254,107 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/* ==============================
+   CHECKOUT PAGE SPECIFIC STYLES
+   ============================== */
+
+.checkout-page main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+#checkoutForm {
+  background-color: #fff;
+  padding: var(--spacing-lg);
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+#checkoutForm h2 {
+  margin-top: var(--spacing-md);
+  color: var(--secondary-color);
+}
+
+#checkoutForm label {
+  display: block;
+  margin-top: var(--spacing-sm);
+  font-weight: 500;
+}
+
+#checkoutForm input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  margin-top: 0.25em;
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  font-size: var(--font-base);
+}
+
+button[type="submit"] {
+  padding: 0.75em 1.5em;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: var(--spacing-md);
+  transition: background 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--tertiary-color);
+}
+
+.order-summary {
+  background-color: #fff;
+  padding: var(--spacing-md);
+  border: 1px solid var(--light-grey);
+  border-radius: 8px;
+  max-width: 400px;
+  margin: var(--spacing-lg) auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.order-summary h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--secondary-color);
+}
+
+.order-summary p {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkoutMessage {
+  text-align: center;
+  margin-top: var(--spacing-md);
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Two-column layout on larger screens */
+@media (min-width: 768px) {
+  main.divider {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+  }
+
+  #checkoutForm {
+    flex: 2;
+  }
+
+  .order-summary {
+    flex: 1;
+    margin: 0;
+  }
+}

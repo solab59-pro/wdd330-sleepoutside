@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable import/no-unresolved */
 
-import { getCart, clearCart } from '../cart/cart.js';
+import { getCart, clearCart } from '../js/cart.js';
 import ExternalServices from '../services/ExternalServices.mjs';
 
 export default class CheckoutProcess {

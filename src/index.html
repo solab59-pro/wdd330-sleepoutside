@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
 
+  
+
   <body>
 
   <!-- HEADER -->
@@ -150,12 +152,29 @@
       <ul class="product-list"></ul>
     </section>
 
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2>Join Our Newsletter</h2>
+        <p>Get updates on new gear, deals, and outdoor tips.</p>
+
+        <form class="newsletter-form">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            required 
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     &copy; 2025 ⛺ SleepOutside
   </footer>
 
+  <script src="./js/newsletter.js"></script>
   <script type="module" src="./js/product-listing.js"></script>
 
 </body>

@@ -267,3 +267,56 @@ button:hover {
     height: 200px;
   }
 }
+
+/* NEWSLETTER */
+.newsletter {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-lg);
+  background: var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.newsletter-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter p {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--small-font);
+}
+
+/* FORM */
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.7em;
+  border: none;
+  border-radius: 6px;
+}
+
+.newsletter-form button {
+  padding: 0.7em 1.2em;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background: var(--tertiary-color);
+}

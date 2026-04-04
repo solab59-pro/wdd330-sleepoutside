@@ -132,7 +132,7 @@ header {
 }
 
 /* CATEGORIES */
-.categories {
+/* .categories {
   padding: 2rem;
   text-align: center;
 }
@@ -168,7 +168,7 @@ header {
   width: 80px;
   height: 80px;
   object-fit: contain;
-}
+} */
 
 /* PRODUCTS */
 .products {

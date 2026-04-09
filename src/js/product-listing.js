@@ -29,3 +29,4 @@ import { getParam } from './utils.mjs';
   }
   document.getElementById('product-title').textContent = `Top Products: ${prettyCategory(category)}`;
 })();
+

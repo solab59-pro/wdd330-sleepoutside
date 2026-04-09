@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Enlarge the memories of the people, convince many of the errors of their ways and bring them to the knowledge of truth.">
+    <meta name="author" content="John Solomon Ekaette">
+    <title>Un-usual Solomon | Home</title>
+
+
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Un-usual Solomon">
+    <meta property="og:description"
+        content="Enlarge the memories of the people, convince many of the errors of their ways and bring them to the knowledge of truth.">
+    <meta property="og:image" content="https://solab59-pro.github.io/wdd231/unusualsolomon/images/...">
+    <meta property="og:url" content="https://solab59-pro.io/wdd231/unusualsolomon/index.html">
+    <meta property="og:type" content="website">
+    <!-- I added this below from my personal study-->
+    <meta property="og:site_name" content="My Awesome Website" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Un-usual Solomon">
+    <meta name="twitter:description"
+        content="Enroll and educate student with avaition relation courses and make them professional in their various field.">
+    <meta name="twitter:image" content="https://solab59-pro.github.io/wdd231/unusualsolomon/images/...">
+    <!-- I added this below from my personal study-->
+    <meta name="twitter:site" content="@mytwitterhandle" />
+    <meta name="twitter:creator" content="@mytwitterhandle" />
+
+    <link rel="icon" href="images/favicon_solomon.png" type="image/png" width="16" height="16">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobileview.css">
+    <link rel="stylesheet" href="styles/bookofmormon.css">
+    <!-- I want to use this to add social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Scripts -->
+    <script src="scripts/bookofmormon.js" defer></script>
+
+
+    <!-- <meta name="theme-color" content="#3f80ff"> -->
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- Header Section -->
+        <!-- Logo and Text -->
+        <div class="header-logo">
+            <!-- The logo used here stands for service not solomon Math 23:11, Luke 22:24-27 -->
+            <a href="http://127.0.0.1:5500/wdd231/unusualsolomon/index.html" target="_self"
+                title="Go to Unusual Solomon">
+                <img src="images/solomon.png" alt="Un-usual Solomon Logo" width="100" height="50" loading="lazy">
+            </a>
+            <div class="logo-text">
+                <h1>Un-usual Solomon</h1>
+                <p class="tagline">Informative, Transformative, Redemptive</p>
+            </div>
+        </div>
+
+        <div class="header-image">
+            <div class="slideshow">
+                <a href="https://example1.com" target="_blank">
+                    <img src="images/glo.png" alt="Header Image 1" loading="lazy">
+                </a>
+                <a href="https://example2.com" target="_blank">
+                    <img src="images/airtel.png" alt="Header Image 2" loading="lazy">
+                </a>
+                <a href="https://example3.com" target="_blank">
+                    <img src="images/mtn.png" alt="Header Image 3" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.jpg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.jpg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube2.png" alt="Youtube" width="30" height="30">
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <img src="images/tiktok.png" alt="Tiktok" width="30" height="30">
+            </a>
+        </div>
+
+        <div class="word-section">
+            <!-- For each word you present here, link the users to wikipedia -->
+            <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank" class="word-link" title="Learn More">
+                <p class="word-title">📘 WORD FOR TODAY : OCTOPUS 🐙</p>
+                <p class="word-meaning">a sea animal known for its eight long arms (or tentacles).</p>
+            </a>
+        </div>
+    </header>
+    <!--  ===== Navigation Bar =====  -->
+    <nav class="nav-container">
+
+        <!-- HAMBURGER ICON -->
+        <!--
+            Question on the function of the toggleMenu
+            Toggle means to switch between two states every time something is clicked or activated.
+
+            Think of it like a light switch:
+
+            Flip UP → light ON, Flip DOWN → light OFF, Flip UP again → ON, Flip DOWN again → OFF - That ON/OFF behavior = toggle.
+
+            ➡ So When the user clicks the element, run a JavaScript function called toggleMenu().
+            
+            Note : In your case, the element is the hamburger icon, so when someone taps/clicks the hamburger,
+            it triggers the function that opens or closes the mobile navigation menu.
+            
+            What toggleMenu() Does
+            
+            Typically, this function:
+            
+            ✔ Shows or hides the .nav-links menu
+            ✔ Adds or removes a CSS class (like active)
+            ✔ Controls animations
+            ✔ Allows the hamburger menu to expand/collapse on mobile screens 
+            
+            IN summary
+            onclick="toggleMenu()" tells the browser:
+
+            "Whenever this element is clicked, run the toggleMenu() function."
+
+            This is how your mobile navigation hamburger opens and closes the menu.-->
+
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#projects" class="dropdown-link">Projects ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mychildproject.html">MyChild Project</a></li>
+                    <li><a href="smile.html">Smile</a></li>
+                </ul>
+            </li>
+            <!-- Fulfilling the divine mandate in jacob 2:19 and Mosiah 4:26 to the poor
+                to clothe the naked, feed the hungry, (liberate the captive (free the unfree or the bond), debtors. Here, money is involved to free them)
+                and administer relief to the sick and the afflicted
+                Call it the smile project-->
+            <li><a href="#education">Education</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#traditions">Traditions</a></li>         
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-word-section" id="navWord">
+            <p class="nav-word-title">JESUS CHRIST ❤️ you with all his heart, soul and might</p>
+        </div>
+    </nav>
+
+    <section class="hero-section full-hero">
+        <div class="hero-full">
+            <img src="images/bookofmormon_book.png" alt="Hero Image">
+            <!-- Check the dimension of this image size and use it 
+                 let the dimension be 1200 by 350. which looks bigger on screen than 1280 by 350(can still use this)-->
+        </div>
+    </section>
+
+    <section class="book_of_mormon_content">
+        <p>The Book of Mormon is a volume of holy scripture comparable to the Bible. It is a record of God's dealings with ancient inhabitants of the 
+        Americas and contains the fulness of the everlasting gospel. It is written to the convincing of the Jews and Gentiles that Jesus is the Christ,
+        the ETERNAL GOD, manifesting himself unto all nations.</p>
+           
+        <p>We invite all men everwhere to read the Book of Mormon, to ponder in their hearts the message it contains, and then to ask God, the Eternal
+        Father, in the name of Jesus Christ if the book is true. Those who pursue this course and ask in faith will gain a testimony of its truth 
+        and divinity by the power of the Holy Ghosr (Moroni 10:3-5.)
+        </p>
+    </section>
+
+    <div class="form-container">
+    
+        <h1>Book of Mormon Request Form</h1>
+    
+        <form method="get" action="thanks.html" class="designOne">
+    
+            <label>First Name
+                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+            </label>
+    
+            <label>Last Name
+                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+            </label>
+    
+            <label>Cell Phone (Include Country Code)
+                <input type="tel" name="phone" required autocomplete="tel" placeholder="+2349012345678">
+            </label>
+    
+            <label>Email
+                <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com">
+            </label>
+    
+            <label>Home Address
+                <input type="text" name="address" required autocomplete="address">
+            </label>
+    
+            <label>Language
+                <input type="text" name="language" required autocomplete="language">
+            </label>
+    
+            <label>Country
+                <select name="country" id="countrySelect" required>
+                    <option value="" disabled selected>Select your country</option>
+                </select>
+            </label>
+    
+            <input type="submit" value="Order Free Copy Now">
+    
+        </form>
+    </div>
+
+    <section class="bom-disclaimer">    
+        <p>Your information will be sent to The Church of Jesus Christ of Latter-day Saints and the missionaries will contact you</p>
+    </section>
+
+    <section class="cta-section">
+        <h2>Want a moblie version of the Book of Mormon?</h2>
+        <p>
+            Click the button below and visit the site to download and learn more about the Book of Mormon
+        </p>
+    
+        <a href="https://www.churchofjesuschrist.org/learn/mobile-applications/book-of-mormon-app?lang=eng" target="_blank"
+            class="cta-btn">
+            Click Here
+        </a>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- About -->
+            <div class="footer-section about">
+                <h3>Un-usual Solomon</h3>
+                <p>Informative | Transformative | Redemptive</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Latest Posts</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: unusualsolomon@gmail.com</p>
+                <p>Phone: +234 9058934035</p>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+                <div class="footer-social-icons">
+                    <a href="https://facebook.com/unusual_solomon"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://twitter.com/unusual_solomon"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://instagram.com/unsual_solomon"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://youtube.com/unusual_solomon"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://tiktok.com/unsual_solomon"><i class="fab fa-tiktok"></i> Tiktok</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Un-usual Solomon. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+    
+</html>
+
+
+    

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Enlarge the memories of the people, convince many of the errors of their ways and bring them to the knowledge of truth.">
+    <meta name="author" content="John Solomon Ekaette">
+    <title>Un-usual Solomon | Home</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Un-usual Solomon">
+    <meta property="og:description"
+        content="Enlarge the memories of the people, convince many of the errors of their ways and bring them to the knowledge of truth.">
+    <meta property="og:image" content="https://solab59-pro.github.io/wdd231/unusualsolomon/images/...">
+    <meta property="og:url" content="https://solab59-pro.io/wdd231/unusualsolomon/index.html">
+    <meta property="og:type" content="website">
+    <!-- I added this below from my personal study-->
+    <meta property="og:site_name" content="My Awesome Website" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Un-usual Solomon">
+    <meta name="twitter:description"
+        content="Enroll and educate student with avaition relation courses and make them professional in their various field.">
+    <meta name="twitter:image" content="https://solab59-pro.github.io/wdd231/unusualsolomon/images/...">
+    <!-- I added this below from my personal study-->
+    <meta name="twitter:site" content="@mytwitterhandle" />
+    <meta name="twitter:creator" content="@mytwitterhandle" />
+
+    <link rel="icon" href="images/favicon_solomon.png" type="image/png" width="16" height="16">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mobileview.css">
+    <link rel="stylesheet" href="styles/mychildproject.css">
+    <!-- I want to use this to add social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Scripts -->
+    <script src="scripts/scripts.js" defer></script>
+
+
+    <!-- <meta name="theme-color" content="#3f80ff"> -->
+</head>
+
+<body>
+    <header class="header-container">
+        <!-- Header Section -->
+        <!-- Logo and Text -->
+        <div class="header-logo">
+            <a href="http://127.0.0.1:5500/wdd231/unusualsolomon/index.html" target="_self"
+                title="Go to Unusual Solomon">
+                <img src="images/solomon.png" alt="Un-usual Solomon Logo" width="100" height="50" loading="lazy">
+            </a>
+            <div class="logo-text">
+                <h1>Un-usual Solomon</h1>
+                <p class="tagline">Informative, Transformative, Redemptive</p>
+            </div>
+        </div>
+
+        <div class="header-image">
+            <div class="slideshow">
+                <a href="https://example1.com" target="_blank">
+                    <img src="images/glo.png" alt="Header Image 1" loading="lazy">
+                </a>
+                <a href="https://example2.com" target="_blank">
+                    <img src="images/airtel.png" alt="Header Image 2" loading="lazy">
+                </a>
+                <a href="https://example3.com" target="_blank">
+                    <img src="images/mtn.png" alt="Header Image 3" loading="lazy">
+                </a>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.jpg" alt="Facebook" width="30" height="30">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.jpg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube2.png" alt="Youtube" width="30" height="30">
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <img src="images/tiktok.png" alt="Tiktok" width="30" height="30">
+            </a>
+        </div>
+
+        <div class="word-section">
+            <!-- For each word you present here, link the users to wikipedia -->
+            <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank" class="word-link" title="Learn More">
+                <p class="word-title">📘 WORD FOR TODAY : OCTOPUS 🐙</p>
+                <p class="word-meaning">a sea animal known for its eight long arms (or tentacles).</p>
+            </a>
+        </div>
+    </header>
+    <!--  ===== Navigation Bar =====  -->
+    <nav class="nav-container">
+
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#projects" class="dropdown-link">Projects ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="mychildproject.html">MyChild Project</a></li>
+                    <li><a href="smile.html">Smile</a></li>
+                </ul>
+            </li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#traditions">Traditions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-word-section" id="navWord">
+            <p class="nav-word-title">JESUS CHRIST ❤️ you with all his heart, soul and might</p>
+        </div>
+    </nav>
+
+    <section class="hero-section full-hero">
+        <div class="hero-full">
+            <img src="images/smile3.png" alt="Hero Image">
+            <!-- Check the dimension of this image size and use it 
+             let the dimension be 1200 by 350. which looks bigger on screen than 1280 by 350(can still use this)-->
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="post-container">
+            <!-- Left side: Posts -->
+            <div class="mychild-posts-section">
+                <div class="mychild-believe">
+                    <h2>The 11 MyChild Believe</h2>
+                    <div class="mychildpost">
+                        <img src="images/post1.png" alt="Belief 1" loading="lazy">
+                        <h3>Every child is a beloved son or daughter of God, born to fulfill a purpose on earth and destined for greatness</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post2.png" alt="Belief 2" loading="lazy">
+                        <h3>Every child needs to discover, develop and deploy their gifts and talents in order to fulfill their purpose on earth</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post3.png" alt="Belief 3" loading="lazy">
+                        <h3>Each child is unique and has the privilege of receiving personal revelation from God for his or her own life.</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post4.png" alt="Belief 4" loading="lazy">
+                        <h3>Every child deserves the privilege and opportunity to be raised by both parents in a home of love, peace and unity</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post5.png" alt="Belief 5" loading="lazy">
+                        <h3>Parents are the primary role model of their children, hence, ought to live worthy of emulation</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post1.png" alt="Belief 6" loading="lazy">
+                        <h3>Parents need to regularly counsel with their children and share positive advice with them as they go through
+                        different phases of life. They need to know and feel that they are not alone in this life</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post2.png" alt="Belief 7" loading="lazy">
+                        <h3>A healthy balanced life is achieved as each child grow spiritually, intellectually, socially and
+                        physically</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post3.png" alt="Belief 8" loading="lazy">
+                        <h3>Education is vital and helps to create a better future for the children</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post4.png" alt="Belief 9" loading="lazy">
+                        <h3>Service to humanity is essential and help each child become a nation builder</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post5.png" alt="Belief 10" loading="lazy">
+                        <h3>Every child needs to be taught to be law abiding citizen of their country and wherever they live</h3>
+                    </div>
+                    
+                    <div class="mychildpost">
+                        <img src="images/post2.png" alt="Belief 11" loading="lazy">
+                        <h3>This season bring with it some of the greatest challenges and opportunities and every child is born for the season</h3>
+                    </div>
+
+                </div>
+
+                <div class="mychild-update">
+                    <h2>Stay Informed</h2>
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing of Christians in Nigeria</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing poj[jjjpojojpo[jof Christians in Nigeria</h3>
+                        </a>
+                    </div>
+
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing poj[jjjpojojpo[jof Christians in Nigeria</h3>
+                        </a>
+                    </div>
+
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing poj[jjjpojojpo[jof Christians in Nigeria</h3>
+                        </a>
+                    </div>
+
+                    <div class="section-image">
+                        <a href="#" target="_blank">
+                            <img src="images/banner-ad1.jpeg" alt="Middle Banner" loading="lazy">
+                        </a>
+                    </div>
+
+                    <div class="titles">
+                        <h2>Early Child Concerns</h2>
+                    </div>
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing poj[jjjpojojpo[jof Christians in Nigeria</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="mychild-update-post">
+                        <a href="#" target="_blank">
+                            <img src="images/post1.png" alt="Post 1" loading="lazy">
+                            <h3>Donald trump speaks on the killing poj[jjjpojojpo[jof Christians in Nigeria</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+               
+    
+        <!-- Right side: Image Gallery
+                 The width dimension should be 250px -->
+        <div class="gallery-section">
+           <!-- Still considering have the mychild believe on the left side or creating this
+            side post  -->
+            <!-- <div class="mychild-believe-section">
+                <h2> 11 MyChild Believe</h2>
+                <div class="mychild-believe-item">
+                    <a href="#" target="_blank">
+                        <img src="images/sport2.png" alt="Sports Image 1" loading="lazy">
+                        <p>Every child is a beloved son or daughter of God, born to fulfill a purpose on earth and destined for
+                            greatness</p>
+                    </a>
+                </div>
+                <div class="mychild-believe-item">
+                    <a href="#" target="_blank">
+                        <img src="images/sport11.jpg" alt="Sports Image 2" loading="lazy">
+                        <p>Every child needs to discover, develop and deploy their gifts and talents in order to fulfill their purpose on earth</p>
+                    </a>
+                </div>
+                <div class="mychild-believe-item">
+                    <a href="#" target="_blank">
+                        <img src="images/sport2.jpg" alt="Sports Image 2">
+                        <p>Barcelona secure comeback victory with a late goal from Lewandowski.</p>
+                    </a>
+                </div>
+                <div class="mychild-believe-item">
+                    <a href="#" target="_blank">
+                        <img src="images/sport2.jpg" alt="Sports Image 2" loading="lazy">
+                        <p>Barcelona secure comeback victory with a late goal from Lewandowski.</p>
+                    </a>
+                </div>
+            </div> -->
+            <div class="gallery">
+                <div class="image-card">
+                    <a href="bookofmormon.html" target="_blank">
+                        <img src="images/bomside.jpeg" alt="Book of Mormon" loading="lazy">
+                    </a>
+            
+                    <a href="bookofmormon.html" target="_blank" class="order-btn">
+                        Order For Free Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="gallery">
+                <a href="#" target="_blank">
+                    <img src="images/canva.jpg" alt="Gallery 2" loading="lazy">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/gallery.jpg" alt="Gallery 2" loading="lazy">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- About -->
+            <div class="footer-section about">
+                <h3>Un-usual Solomon</h3>
+                <p>Informative | Transformative | Redemptive</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Latest Posts</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p>Email: unusualsolomon@gmail.com</p>
+                <p>Phone: +234 9058934035</p>
+            </div>
+    
+            <!-- Social Media -->
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+                <div class="footer-social-icons">
+                    <a href="https://facebook.com/unusual_solomon"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://twitter.com/unusual_solomon"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://instagram.com/unsual_solomon"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://youtube.com/unusual_solomon"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://tiktok.com/unsual_solomon"><i class="fab fa-tiktok"></i> Tiktok</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>© 2025 Un-usual Solomon. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

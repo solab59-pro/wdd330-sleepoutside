@@ -1,0 +1,154 @@
+.book_of_mormon_content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #f5f7ff;
+    border-left: 6px solid #3f80ff;
+    border-radius: 12px;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.7;
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.book_of_mormon_content p {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+.book_of_mormon_content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Container Styling */
+.form-container {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f5f7ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Heading */
+.form-container h1 {
+    text-align: center;
+    color: #3f80ff;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Form Fields */
+.designOne label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.designOne input,
+.designOne select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #c6d0ff;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Hover + Focus Effects */
+.designOne input:focus,
+.designOne select:focus {
+    border-color: #3f80ff;
+    box-shadow: 0 0 5px rgba(63, 128, 255, 0.4);
+}
+
+/* Submit Button */
+.designOne input[type="submit"] {
+    width: 100%;
+    background: #3f80ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.designOne input[type="submit"]:hover {
+    background: #2d6ae6;
+}
+
+/* Book of Mormon page disclaimer */
+.bom-disclaimer {
+    max-width: 550px;
+    margin: 20px auto 40px;
+    background: #fff3cd;
+    border-left: 6px solid #ffcc00;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bom-disclaimer p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+.cta-section {
+    background: linear-gradient(rgba(0, 96, 120, 0.9),
+            rgba(0, 96, 120, 0.9));
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #004f5d;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
